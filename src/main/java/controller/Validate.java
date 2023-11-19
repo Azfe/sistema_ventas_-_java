@@ -35,6 +35,15 @@ public class Validate extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+		
+		String accion = request.getParameter("accion");
+		
+		if(accion.equalsIgnoreCase("Acceder")) {
+			String user = request.getParameter("textuser");
+			String pass = request.getParameter("textpass");
+		}else {
+			
+		}
 	}
 
 }
